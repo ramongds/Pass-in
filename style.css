@@ -148,6 +148,25 @@ main table tbody td:nth-child(2),:nth-child(3){
     color: var(--gray200);
 }
 
+main table ,tbody td:nth-child(2),thead th:nth-child(2){
+    text-align: center;
+}
+
+main table ,tbody td:nth-child(1),thead th:nth-child(1){
+    text-align: start;
+}
+
+main table ,tbody td:nth-child(3),thead th:nth-child(3){
+    text-align: center;
+}
+
+
+main table tbody td .remove{
+    vertical-align: inherit;
+    margin-left: 2rem;
+}
+
+
 
 main table tbody td{
     border-top: solid 1px rgba(255, 255, 255, 0.11);
