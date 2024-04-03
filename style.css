@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --black900: #121214;
+    --orange:#F48F56;
+    --DarkeGreen: #00292E;
+    --lightGreen:#9FF9CC;
+    --gray100:#E1E1E6;
+    --gray200:#C4C4CC;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;          
+    font-family: roboto;
+    color: white;
+    background: linear-gradient(-45deg, #4a044e, #7e22ce, #8b5cf6, #6366f1);
+    background-size: 400% 400%;
+    animation: Gradient 5s ease infinite;
+}
+
+
+main{
+    width:60vw;
+    padding:  2rem 3.2rem 3.2rem;
+    border-radius: .8rem;
+    background-color: var(--black900);
+}
+
+
+main form{
+    width: auto;
+    padding: 1rem 0 0;
+    margin: 2rem 0;
+    border-top: 1px rgba(255, 255, 255, 0.103) solid;
+    border-bottom: 1px rgba(255, 255, 255, 0.103) solid;
+
+}
+
+
+main form fieldset{
+    width: auto;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 1.6rem 0 ;
+    border: none;
+    color: var(--gray100);
+}
+
+
+main form fieldset #inputBox{
+    justify-content: space-between;
+    width:100%;
+    display: flex;
+    gap:.5rem;
+
+}
+
+
+main form #inputBox input{
+    width: clamp(15vw,20vw,30vw) ;
+    height: 4rem;
+    padding:0 3.5rem 0;
+    border: none;
+    border: solid 1px rgba(255, 255, 255, 0.103);
+    border-radius:1rem ;
+    color: var(--gray200) ;
+    background-color: var(--black900);
+}
+
+
+main form #inputBox #name{
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_4003_2796)'%3E%3Cpath d='M12 13.3333C12 12.2724 11.5786 11.255 10.8284 10.5048C10.0783 9.75468 9.06087 9.33325 8 9.33325C6.93913 9.33325 5.92172 9.75468 5.17157 10.5048C4.42143 11.255 4 12.2724 4 13.3333' stroke='%239FF9CC' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8.00004 9.33333C9.4728 9.33333 10.6667 8.13943 10.6667 6.66667C10.6667 5.19391 9.4728 4 8.00004 4C6.52728 4 5.33337 5.19391 5.33337 6.66667C5.33337 8.13943 6.52728 9.33333 8.00004 9.33333Z' stroke='%239FF9CC' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8.00004 14.6666C11.6819 14.6666 14.6667 11.6818 14.6667 7.99992C14.6667 4.31802 11.6819 1.33325 8.00004 1.33325C4.31814 1.33325 1.33337 4.31802 1.33337 7.99992C1.33337 11.6818 4.31814 14.6666 8.00004 14.6666Z' stroke='%239FF9CC' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_4003_2796'%3E%3Crect width='16' height='16' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 1rem;
+}
+
+
+main form #inputBox #email{
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_4003_2802)'%3E%3Cpath d='M8.00004 10.6666C9.4728 10.6666 10.6667 9.47268 10.6667 7.99992C10.6667 6.52716 9.4728 5.33325 8.00004 5.33325C6.52728 5.33325 5.33337 6.52716 5.33337 7.99992C5.33337 9.47268 6.52728 10.6666 8.00004 10.6666Z' stroke='%239FF9CC' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10.6667 5.33326V8.66659C10.6667 9.19702 10.8774 9.70573 11.2525 10.0808C11.6276 10.4559 12.1363 10.6666 12.6667 10.6666C13.1971 10.6666 13.7059 10.4559 14.0809 10.0808C14.456 9.70573 14.6667 9.19702 14.6667 8.66659V7.99992C14.6667 6.49813 14.1596 5.04032 13.2277 3.8627C12.2957 2.68508 10.9934 1.85664 9.53173 1.5116C8.07011 1.16656 6.5348 1.32513 5.17456 1.96163C3.81431 2.59812 2.70882 3.67525 2.0372 5.0185C1.36558 6.36175 1.16717 7.89242 1.47412 9.36251C1.78107 10.8326 2.57539 12.156 3.7284 13.1183C4.88141 14.0805 6.32554 14.6253 7.82683 14.6643C9.32812 14.7034 10.7986 14.2343 12 13.3333' stroke='%239FF9CC' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_4003_2802'%3E%3Crect width='16' height='16' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 1rem;
+}
+
+
+main form #inputBox input::placeholder{
+    font-size: 1.2rem;
+}
+
+
+main form #inputBox button{
+    max-height: 4rem;
+    padding: 1rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 1rem;
+    color: var(--DarkeGreen);
+    background-color: var(--orange);   
+}
+
+
+main #title{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--gray100);
+}
+
+
+main .outBox{
+    margin-top: 1.5rem;
+    border: solid 1px rgba(255, 255, 255, 0.11) ;
+    border-radius: .8rem;
+}
+
+
+main table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+main table thead {
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+
+main table thead th, tbody td{
+    padding: 1.2rem 1.6rem;
+    font-size: 1.4rem;
+}
+
+
+main table tbody td:nth-child(2),:nth-child(3){
+    font-size: 1.3rem;
+    color: var(--gray200);
+}
+
+
+main table tbody td{
+    border-top: solid 1px rgba(255, 255, 255, 0.11);
+}
+
+
+main table tbody small{
+    font-size: 1.1rem;
+    color:var(--gray200);
+}
+
+
+main table button{
+    all:unset;
+    color: var(--lightGreen);
+}
+
+
+main table button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/************@frames***************/
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+
+
+
